@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A9FED1C518D7EBFC02D4E4 /* libPods-WTImageEasyInOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A6A84A81B574D48BDE873A /* libPods-WTImageEasyInOut.a */; };
 		5DACEED11E53E308004042F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACEED01E53E308004042F0 /* main.m */; };
 		5DACEED41E53E308004042F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACEED31E53E308004042F0 /* AppDelegate.m */; };
 		5DACEED71E53E308004042F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACEED61E53E308004042F0 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		5DACEEDF1E53E308004042F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DACEEDD1E53E308004042F0 /* LaunchScreen.storyboard */; };
 		5DACEEEA1E53E308004042F0 /* WTImageEasyInOutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACEEE91E53E308004042F0 /* WTImageEasyInOutTests.m */; };
 		5DACEEF51E53E308004042F0 /* WTImageEasyInOutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACEEF41E53E308004042F0 /* WTImageEasyInOutUITests.m */; };
+		5DACEF051E53E485004042F0 /* UIImageView+EasyInOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACEF041E53E485004042F0 /* UIImageView+EasyInOut.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D746F9E2BFA7D3A2E8AA9AA /* Pods-WTImageEasyInOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTImageEasyInOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTImageEasyInOut/Pods-WTImageEasyInOut.release.xcconfig"; sourceTree = "<group>"; };
+		48A6A84A81B574D48BDE873A /* libPods-WTImageEasyInOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WTImageEasyInOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DACEECC1E53E308004042F0 /* WTImageEasyInOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTImageEasyInOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DACEED01E53E308004042F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DACEED21E53E308004042F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		5DACEEF01E53E308004042F0 /* WTImageEasyInOutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTImageEasyInOutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DACEEF41E53E308004042F0 /* WTImageEasyInOutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTImageEasyInOutUITests.m; sourceTree = "<group>"; };
 		5DACEEF61E53E308004042F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DACEF031E53E485004042F0 /* UIImageView+EasyInOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+EasyInOut.h"; sourceTree = "<group>"; };
+		5DACEF041E53E485004042F0 /* UIImageView+EasyInOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+EasyInOut.m"; sourceTree = "<group>"; };
+		E6D01216434B4D698FE8E9C3 /* Pods-WTImageEasyInOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTImageEasyInOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTImageEasyInOut/Pods-WTImageEasyInOut.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A9FED1C518D7EBFC02D4E4 /* libPods-WTImageEasyInOut.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13CB7791C55DD1680B90C56D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48A6A84A81B574D48BDE873A /* libPods-WTImageEasyInOut.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5DACEEC31E53E308004042F0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,8 @@
 				5DACEEE81E53E308004042F0 /* WTImageEasyInOutTests */,
 				5DACEEF31E53E308004042F0 /* WTImageEasyInOutUITests */,
 				5DACEECD1E53E308004042F0 /* Products */,
+				87B83AFD733CDEC92F972984 /* Pods */,
+				13CB7791C55DD1680B90C56D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +119,7 @@
 		5DACEECE1E53E308004042F0 /* WTImageEasyInOut */ = {
 			isa = PBXGroup;
 			children = (
+				5DACEF021E53E469004042F0 /* WTImageEasyInOut */,
 				5DACEED21E53E308004042F0 /* AppDelegate.h */,
 				5DACEED31E53E308004042F0 /* AppDelegate.m */,
 				5DACEED51E53E308004042F0 /* ViewController.h */,
@@ -140,6 +159,24 @@
 			path = WTImageEasyInOutUITests;
 			sourceTree = "<group>";
 		};
+		5DACEF021E53E469004042F0 /* WTImageEasyInOut */ = {
+			isa = PBXGroup;
+			children = (
+				5DACEF031E53E485004042F0 /* UIImageView+EasyInOut.h */,
+				5DACEF041E53E485004042F0 /* UIImageView+EasyInOut.m */,
+			);
+			path = WTImageEasyInOut;
+			sourceTree = "<group>";
+		};
+		87B83AFD733CDEC92F972984 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6D01216434B4D698FE8E9C3 /* Pods-WTImageEasyInOut.debug.xcconfig */,
+				0D746F9E2BFA7D3A2E8AA9AA /* Pods-WTImageEasyInOut.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5DACEEF91E53E308004042F0 /* Build configuration list for PBXNativeTarget "WTImageEasyInOut" */;
 			buildPhases = (
+				A2E9B467B7896D9935C6F28A /* [CP] Check Pods Manifest.lock */,
 				5DACEEC81E53E308004042F0 /* Sources */,
 				5DACEEC91E53E308004042F0 /* Frameworks */,
 				5DACEECA1E53E308004042F0 /* Resources */,
+				4F704B5B9A1BB1B119A785D1 /* [CP] Embed Pods Frameworks */,
+				C1D468E1732051476D43A3BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +308,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F704B5B9A1BB1B119A785D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTImageEasyInOut/Pods-WTImageEasyInOut-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2E9B467B7896D9935C6F28A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D468E1732051476D43A3BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WTImageEasyInOut/Pods-WTImageEasyInOut-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5DACEEC81E53E308004042F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,6 +363,7 @@
 			files = (
 				5DACEED71E53E308004042F0 /* ViewController.m in Sources */,
 				5DACEED41E53E308004042F0 /* AppDelegate.m in Sources */,
+				5DACEF051E53E485004042F0 /* UIImageView+EasyInOut.m in Sources */,
 				5DACEED11E53E308004042F0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +509,7 @@
 		};
 		5DACEEFA1E53E308004042F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6D01216434B4D698FE8E9C3 /* Pods-WTImageEasyInOut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WTImageEasyInOut/Info.plist;
@@ -431,6 +521,7 @@
 		};
 		5DACEEFB1E53E308004042F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D746F9E2BFA7D3A2E8AA9AA /* Pods-WTImageEasyInOut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WTImageEasyInOut/Info.plist;
@@ -505,6 +596,7 @@
 				5DACEEFB1E53E308004042F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DACEEFC1E53E308004042F0 /* Build configuration list for PBXNativeTarget "WTImageEasyInOutTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +605,7 @@
 				5DACEEFE1E53E308004042F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DACEEFF1E53E308004042F0 /* Build configuration list for PBXNativeTarget "WTImageEasyInOutUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +614,7 @@
 				5DACEF011E53E308004042F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
