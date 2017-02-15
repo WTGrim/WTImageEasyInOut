@@ -12,7 +12,7 @@
 @implementation UIImageView (EasyInOut)
 
 
-- (void)setImageWithURL:(NSString *)ImageURL placeholderImage:(UIImage *)placeholderImage completed:(void (^)(UIImage *))completed{
+- (void)wt_setImageWithURL:(NSString *)ImageURL placeholderImage:(UIImage *)placeholderImage completed:(void (^)(UIImage *))completed{
     
     __weak typeof(self)weakSelf = self;
     [self sd_setImageWithURL:[NSURL URLWithString:ImageURL] placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
