@@ -10,4 +10,6 @@
 
 @interface UIImageView (EasyInOut)
 
+- (void)setImageWithURL:(NSString *)ImageURL placeholderImage:(UIImage *)placeholderImage completed:(void(^)(UIImage *image))completed;
+
 @end
