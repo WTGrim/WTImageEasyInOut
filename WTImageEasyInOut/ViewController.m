@@ -8,35 +8,50 @@
 
 #import "ViewController.h"
 #import "UIImageView+EasyInOut.h"
+#import "ImageProgressView.h"
 
-
+#define W 30
 @interface ImageViewCell : UITableViewCell
 
 @property(nonatomic, strong)UIImageView *picImageView;
+@property(nonatomic, strong)ImageProgressView *progressView ;
 - (void)setCellWithUrl:(NSString *)url;
 
 @end
 
 @implementation ImageViewCell
 
+- (ImageProgressView *)progressView{
+    if (!_progressView) {
+        _progressView = [[ImageProgressView alloc]initWithFrame:CGRectMake((self.bounds.size.width - W) * 0.5, (self.bounds.size.height- W) * 0.5, W, W)];
+    }
+    return _progressView;
+}
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        
         _picImageView = [[UIImageView alloc]init];
         [self.contentView addSubview:_picImageView];
+        [self.contentView addSubview:self.progressView];
+
     }
     return self;
 }
 
 - (void)setCellWithUrl:(NSString *)url{
     
-    [self.picImageView wt_setImageWithURL:url placeholderImage:nil completed:nil];
+    [self.progressView show];
+    __weak typeof(self)weakSelf = self;
+    [self.picImageView wt_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"moren.jpeg"] completed:^(UIImage *image) {
+        [weakSelf.progressView hide];
+    }];
 }
 
 - (void)layoutSubviews{
     [super layoutSubviews];
     self.picImageView.frame = self.bounds;
+    self.progressView.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height * 0.5);
 }
 @end
 
@@ -61,12 +76,14 @@ static NSString *const cellId = @"cellId";
     self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [self.tableView registerClass:[ImageViewCell class] forCellReuseIdentifier:cellId];
     self.tableView.dataSource = self;
-    self.tableView.rowHeight = 100;
+    self.tableView.rowHeight = 230;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self.view addSubview:self.tableView];
     
-    self.dataArray = @[@"http://img.mp.itc.cn/upload/20160829/ca3995a158664f5ab368523a0731afe6_th.jpg",
+    self.dataArray = @[
+                       @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488360008080&di=d91f2df1f957c94b20ad5aec615f4e97&imgtype=0&src=http%3A%2F%2Fpic23.nipic.com%2F20120815%2F1065982_153222584170_2.jpg",
+                       @"http://img.mp.itc.cn/upload/20160829/ca3995a158664f5ab368523a0731afe6_th.jpg",
                        @"http://img.mp.itc.cn/upload/20160829/2fffd742017247738c4eef644b0a83d8_th.jpg",
                        @"http://img.mp.itc.cn/upload/20160829/5c560f0b2a22446bb834de119d83a904_th.jpg",
                        @"http://img.mp.itc.cn/upload/20160829/86421eef973046a3a466ae9601bbe652_th.jpg",

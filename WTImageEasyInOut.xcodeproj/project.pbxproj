@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01A9FED1C518D7EBFC02D4E4 /* libPods-WTImageEasyInOut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A6A84A81B574D48BDE873A /* libPods-WTImageEasyInOut.a */; };
+		5D8EA06A1E669B20006D5A44 /* ImageProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8EA0691E669B20006D5A44 /* ImageProgressView.m */; };
 		5DACEED11E53E308004042F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACEED01E53E308004042F0 /* main.m */; };
 		5DACEED41E53E308004042F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACEED31E53E308004042F0 /* AppDelegate.m */; };
 		5DACEED71E53E308004042F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DACEED61E53E308004042F0 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		0D746F9E2BFA7D3A2E8AA9AA /* Pods-WTImageEasyInOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTImageEasyInOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTImageEasyInOut/Pods-WTImageEasyInOut.release.xcconfig"; sourceTree = "<group>"; };
 		48A6A84A81B574D48BDE873A /* libPods-WTImageEasyInOut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WTImageEasyInOut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8EA0681E669B20006D5A44 /* ImageProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProgressView.h; sourceTree = "<group>"; };
+		5D8EA0691E669B20006D5A44 /* ImageProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageProgressView.m; sourceTree = "<group>"; };
 		5DACEECC1E53E308004042F0 /* WTImageEasyInOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTImageEasyInOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DACEED01E53E308004042F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DACEED21E53E308004042F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 			children = (
 				5DACEF031E53E485004042F0 /* UIImageView+EasyInOut.h */,
 				5DACEF041E53E485004042F0 /* UIImageView+EasyInOut.m */,
+				5D8EA0681E669B20006D5A44 /* ImageProgressView.h */,
+				5D8EA0691E669B20006D5A44 /* ImageProgressView.m */,
 			);
 			path = WTImageEasyInOut;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8EA06A1E669B20006D5A44 /* ImageProgressView.m in Sources */,
 				5DACEED71E53E308004042F0 /* ViewController.m in Sources */,
 				5DACEED41E53E308004042F0 /* AppDelegate.m in Sources */,
 				5DACEF051E53E485004042F0 /* UIImageView+EasyInOut.m in Sources */,

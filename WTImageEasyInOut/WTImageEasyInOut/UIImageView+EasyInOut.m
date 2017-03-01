@@ -19,12 +19,13 @@
         
         if (image && cacheType == SDImageCacheTypeNone) {
             CATransition *animation = [CATransition animation];
-            animation.duration = 0.2;
+            animation.duration = 1;
             animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-            animation.type = kCATransitionFade;
             [weakSelf.layer addAnimation:animation forKey:nil];
         }
+        completed(image);
     }];
 }
+
 
 @end
