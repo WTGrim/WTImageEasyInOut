@@ -62,10 +62,10 @@
     
     self.arcLayer.strokeEnd = 0.3;
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    animation.duration = 2;
+    animation.duration = 1;
     animation.repeatCount = MAXFLOAT;
     animation.toValue = @(M_PI * 1.5);
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]; //匀速执行动画
     animation.fillMode = kCAFillModeForwards;
     animation.removedOnCompletion = NO;
     [self.arcLayer addAnimation:animation forKey:@"rotationAnimation"];
